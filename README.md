@@ -11,7 +11,7 @@ As of writing, 100% of the endpoints are implemented, each corresponding to a fu
 
 Add the following dependency to your `project.clj` file:
 
-[eigenbahn/prometheus-api-client "1.0.0"]
+    [eigenbahn/prometheus-api-client "1.0.0"]
 
 
 ## General Usage
