@@ -38,7 +38,7 @@ Arguments corresponding to a time instant (and by extension the boundaries of a 
 
 - any valid Clojure `inst` object
 - UNIX timestamp with second precision, with optional milliseconds after the comma, in string or number. E.g.: ``"1600093006"``, `1600093006`, `"1600093006.148"`, `1600093006.148`.
-- an [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) string. E.g. `1996-12-19T16:39:57-08:00`.
+- an [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) string. E.g. `"1996-12-19T16:39:57-08:00"`.
 
 
 #### Optional arguments
