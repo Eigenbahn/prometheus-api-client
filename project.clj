@@ -1,4 +1,4 @@
-(defproject eigenbahn/prometheus-api-client "1.0.0"
+(defproject eigenbahn/prometheus-api-client "1.0.1"
   :description "Clojure Prometheus HTTP API client."
   :url "https://github.com/eigenbahn/prometheus-api-client"
   :license {:name "The MIT License"
