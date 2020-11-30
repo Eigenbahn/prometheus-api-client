@@ -92,10 +92,10 @@ Only the TSDB querying-related ones are presented here.
 ;;       "__name__" "scrape_duration_seconds"}}]
 
 ;; over a time range (/query-range endpoint)
-(prometheus-api.client/query prom-conn "scrape_duration_seconds"
-                             #inst "2020-09-14T12:16:04.148000000-00:00" ; from
-                             #inst "2020-09-14T14:15:50.148000000-00:00" ; to
-                             14)                                         ; step (in seconds unless unit specified)
+(prometheus-api.client/query-range prom-conn "scrape_duration_seconds"
+                                   #inst "2020-09-14T12:16:04.148000000-00:00" ; from
+                                   #inst "2020-09-14T14:15:50.148000000-00:00" ; to
+                                   14)                                         ; step (in seconds unless unit specified)
 ;; -> [{"values"
 ;;      {#inst "2020-09-14T12:47:02.000000000-00:00" 0.00457012,
 ;;       #inst "2020-09-14T12:17:10.000000000-00:00" 0.00456644,
