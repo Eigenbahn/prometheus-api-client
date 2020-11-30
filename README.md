@@ -105,6 +105,10 @@ Only the TSDB querying-related ones are presented here.
 ;;      {"job" "prometheus",
 ;;       "instance" "localhost:9090",
 ;;       "__name__" "scrape_duration_seconds"}}]
+
+;; note that the the /query endpoint also allows querying over a relative range with a step
+;; e.g. the last 30 minutes grouped by 5 minutes
+(prometheus-api.client/query prom-conn "scrape_duration_seconds[30m:5m]")
 ```
 
 
