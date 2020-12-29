@@ -68,7 +68,7 @@
   When `:at` is omitted, last data point is returned.
   Optionally, a `:timeout` can be specified.
 
-  If you cant to query over a time range, use [[query-range]].
+  If you want to query over a time range, use [[query-range]].
 
   This corresponds to the [/query endpoint](https://prometheus.io/docs/prometheus/latest/querying/api/#instant-queries)."
   [conn q & {:keys [at timeout]}]
@@ -83,7 +83,7 @@
   "Query data with `q` over a time range (from `start` to `end` with `step` duration between points).
   Optionally, a `:timeout` can be specified.
 
-  If you cant to query only at a given instant, use [[query]].
+  If you want to query only at a given instant, use [[query]].
 
   This corresponds to the [/query_range endpoint](https://prometheus.io/docs/prometheus/latest/querying/api/#range-queries)."
   [conn q start end step & {:keys [timeout]}]
